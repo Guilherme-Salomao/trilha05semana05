@@ -1,6 +1,7 @@
 ﻿class Menu
 {
-    public void ExibirLogo() {
+    public void ExibirLogo()
+    {
         Console.WriteLine(@"
 ░██████╗███████╗███╗░░░███╗░█████╗░███╗░░██╗░█████╗░  ░█████╗░███████╗
 ██╔════╝██╔════╝████╗░████║██╔══██╗████╗░██║██╔══██╗  ██╔══██╗██╔════╝
@@ -10,11 +11,11 @@
 ╚═════╝░╚══════╝╚═╝░░░░░╚═╝╚═╝░░╚═╝╚═╝░░╚══╝╚═╝░░╚═╝  ░╚════╝░╚═════╝░");
     }
 
- 
+    //Criando a lista de produtos
     private List<Produto> produtos = new List<Produto>();
 
-
-    public void ExibirMenu(){
+    public void ExibirMenu()
+    {
         Console.WriteLine("\nDigite 1 para registrar um Produto");
         Console.WriteLine("Digite 2 para listar os Produtos");
         Console.WriteLine("Digite -1 para sair");
@@ -24,7 +25,8 @@
 
         switch (opcaoEscolhidaNumerica)
         {
-            case 1: CadastraProduto();
+            case 1:
+                CadastraProduto();
                 break;
             case 2:
                 ListaProduto();
@@ -37,9 +39,6 @@
                 break;
         }
     }
-
-
-
     public void CadastraProduto()
     {
         Console.Clear();
